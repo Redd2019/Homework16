@@ -1,7 +1,9 @@
-public class Bicycle {
+public class Bicycle extends Vehicles{
 
-    public String modelName;
-    public int wheelsCount;
+    public Bicycle(int wheelsCount, String modelName) {
+        super(wheelsCount, modelName);
+
+    }
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");
